@@ -1,0 +1,44 @@
+<html>
+<style>
+form{
+padding:10px;
+margin:10px;
+}
+fieldset{
+padding:20px;
+color:black;
+}
+
+</style>
+
+<body>
+
+<script type="text/javascript">
+function fact(n)
+{
+var m=1;
+while(n)
+{
+m=m*n;
+n--;
+}
+alert("Factorial of given number :"+" "+ m);
+}
+
+</script>
+<fieldset style="margin-right:650px;">
+<h1> Find Factorial of the Number</h1>
+<form name="frm1">
+Enter any number :<br>
+<br>
+<input type="text" name="fact1" style="font-size:20px; height:30;  
+width:200;color:blue;"><br><br>
+<input type="submit" value="Calculate Factorial" onclick="fact 
+(frm1.fact1.value)" style="font-size:20px; height:35; width:185; color:red;">
+
+
+</fieldset>
+</form>
+
+</body>
+</html>

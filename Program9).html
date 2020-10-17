@@ -1,0 +1,47 @@
+<html>
+ <style>
+ form{
+ padding:10px;
+ margin:10px;
+ }
+ fieldset{
+ padding:20px;
+ color;green;
+ }
+ </style>
+ 
+ <body>
+ <script type="text/javascript">
+ function f1()
+ {
+  var c=parseInt(abc.btn1.value);
+  if(!c)
+  alert("Enter any number other than 0")
+  else
+  {
+    var i=2;
+    while(i<=c-1)
+    { if(c%i==0)
+      { abc.btn2.value="Not a prime no.";
+       break;
+      }
+      i++;
+    }
+    if(c==i)
+     abc.btn2.value="prime no.";
+  }
+ } 
+  </script>
+  <form name="abc">
+  <fieldset style="margin-right:650px;">
+  <h1> To Find whether the no. is prime or not </h1>
+  Enter Any Value: <br/>
+  <input type="text" name="btn1" style="font-size:50px;height:60;width:500; color:red;">
+ <br/>  <br/>
+  No. is Prime or Not: <br/>
+  <input type="text" name="btn2" style="font-size:50px;height:60;width:500; color:blue;">
+ <br/> <br/>
+ <input type="button" name="btn3" value="check" onclick="f1()" style="font-size:50px;height:80; width:500; color:red;" >
+ </fieldset>
+ </form>
+</body>

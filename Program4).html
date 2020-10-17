@@ -1,0 +1,52 @@
+<html>
+ <style>
+ form{
+ padding:10px;
+ margin:10px;
+ }
+ fieldset{
+ padding:20px;
+ color;green;
+ }
+ </style>
+ 
+ <body>
+ <script type="text/javascript">
+ function f1()
+ {
+  var n=parseInt(abc.btn1.value);
+  var m=parseInt(abc.btn4.value);
+
+  if(n>m)
+  { alert("plz enter m greater than n") }
+  else
+  {
+   var sum=0,i;
+    for(i=n;i<=m;i++)
+    { sum+=i;
+    }
+   abc.btn2.value=sum;
+  }
+ } 
+  </script>
+  <form name="abc">
+  <fieldset style="margin-right:650px;">
+  <h1> Find the Sum of numbers from n to m </h1>
+  Enter the Value of n: <br/>
+  <input type="text" name="btn1" style="font-size:50px;height:60;width:500;  
+color:red;">
+ <br/>  <br/>
+  Enter the Value of m: <br/>
+  <input type="text" name="btn4" style="font-size:50px;height:60;width:500;  
+color:red;">
+ <br/>  <br/>
+  Sum of Numbers from n to m(including both): <br/>
+  <input type="text" name="btn2" style="font-size:50px;height:100;width:500;  
+color:blue;">
+ <br/> <br/>
+ <input type="button" name="btn3" value="calculate" onclick="f1()"  
+style="font-size:50px;height:80; width:500; color:red;" >
+ </fieldset>
+ </form>
+</body>
+</html>

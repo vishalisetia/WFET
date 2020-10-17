@@ -1,0 +1,42 @@
+<html>
+ <style>
+ form{
+ padding:10px;
+ margin:10px;
+ }
+ fieldset{
+ padding:20px;
+ color;green;
+ }
+ </style>
+ 
+ <body>
+ <script type="text/javascript">
+ function f1()
+ {
+  var n=abc.btn1.value;
+  if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'|| 
+n=='O'||n=='U')
+  { abc.btn2.value="Vowel"; }
+   else
+  { abc.btn2.value="Consonant";
+  }
+ } 
+  </script>
+  <form name="abc">
+  <fieldset style="margin-right:650px;">
+  <h1> Find whether the entered alphabet is Vowel or Consonant </h1>
+  Enter Any Alphabet: <br/>
+  <input type="text" name="btn1" style="font-size:50px;height:60;width:500;  
+color:red;">
+ <br/>  <br/>
+  No. is Vowel or Consonant: <br/>
+  <input type="text" name="btn2" style="font-size:50px;height:60;width:500;  
+color:blue;">
+ <br/> <br/>
+ <input type="button" name="btn3" value="check" onclick="f1()" style="font- 
+size:50px;height:80; width:500; color:red;" >
+ </fieldset>
+ </form>
+</body>
+</html>

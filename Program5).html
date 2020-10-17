@@ -1,0 +1,47 @@
+<html>
+ <style>
+ form{
+ padding:10px;
+ margin:10px;
+ }
+ fieldset{
+ padding:20px;
+ color;green;
+ }
+ </style>
+ 
+ <body>
+ <script type="text/javascript">
+ function f1()
+ {
+  var c=parseInt(abc.btn1.value);
+  if(!c)
+  {
+  alert("Enter any number other than 0")
+  }
+  else
+  {
+   if(c%2==0)
+   abc.btn2.value="even";
+   else
+   abc.btn2.value="odd";
+  }
+ } 
+  </script>
+  <form name="abc">
+  <fieldset style="margin-right:650px;">
+  <h1> Find whether the no. is Even or Odd </h1>
+  Enter Any Value: <br/>
+  <input type="text" name="btn1" style="font-size:50px;height:60;width:500;  
+color:red;">
+ <br/>  <br/>
+  No. is Even or Odd: <br/>
+  <input type="text" name="btn2" style="font-size:50px;height:60;width:500;  
+color:blue;">
+ <br/> <br/>
+ <input type="button" name="btn3" value="check" onclick="f1()" style="font- 
+size:50px;height:80; width:500; color:red;" >
+ </fieldset>
+ </form>
+</body>
+</html> 

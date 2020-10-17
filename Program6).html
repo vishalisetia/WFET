@@ -1,0 +1,43 @@
+<html>
+ <style>
+ form{
+ padding:10px;
+ margin:10px;
+ }
+ fieldset{
+ padding:20px;
+ color;green;
+ }
+ </style>
+ 
+ <body>
+ <script type="text/javascript">
+ function f1()
+ {
+  var c=parseInt(abc.btn1.value);
+  var d=parseInt(abc.btn2.value);
+ 
+   if(c>=d)
+   abc.btn3.value=c;
+   else
+   abc.btn3.value=d;
+  
+ } 
+  </script>
+  <form name="abc">
+  <fieldset style="margin-right:650px;">
+  <h1> Find the Greater of 2 Numbers </h1>
+  Enter First No: <br/>
+  <input type="text" name="btn1" style="font-size:50px;height:60;width:500; color:red;">
+ <br/>  <br/>
+  Enter second No: <br/>
+  <input type="text" name="btn2" style="font-size:50px;height:60;width:500; color:blue;">
+ <br/> <br/>
+  Greater Number is: <br/>
+  <input type="text" name="btn3" style="font-size:50px;height:60;width:500; color:blue;">
+ <br/> <br/>
+ <input type="button" name="btn4" value="check" onclick="f1()" style="font-size:50px;height:80; width:500; color:red;" >
+ </fieldset>
+ </form>
+</body>
+</html>

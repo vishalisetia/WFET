@@ -1,0 +1,58 @@
+<html>
+<style>
+form{
+padding:10px;
+margin:10px;
+}
+fieldset{
+padding:20px;
+color:blue;
+}
+
+</style>
+
+<body>
+
+<script type="text/javascript">
+
+function rev()
+{
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("input").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+abc.btn2.value=temp;
+}
+
+</script>
+
+<form name="abc">
+
+<fieldset style="margin-right:650px;">
+<h1> Find the Reverse of a Number</h1>
+
+Enter any Number: <br>
+<br>
+<input id="input" style="font-size:50px; height:60;width:500;color:blue;">
+<br><br>
+Reverse of Number: <br>
+<br>
+<input type="text" name="btn2" style="font-size:50px;  
+height:60;width:500;color:blue;">
+<br><br>
+
+<input type="button" name="btn3" value="Check" onclick="rev()" style="font- 
+size:50px; height:80; width:500; color:red;">
+
+</fieldset>
+</form>
+
+</body>
+</html>
