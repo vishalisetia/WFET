@@ -1,0 +1,45 @@
+<html>
+<body>
+<script language="javascript">
+function sum()
+{
+	a=parseFloat(document.forms[0].t1.value);		<!-- parseFloat() function parses a string and returns a floating point number. -->
+	b=parseFloat(document.forms[0].t2.value);
+	c=a+b;
+	document.forms[0].t3.value=c;
+}
+function diff()
+{
+	a=parseFloat(document.forms[0].t1.value);
+	b=parseFloat(document.forms[0].t2.value);
+	c=a-b;
+	document.forms[0].t3.value=c;
+}
+</script>
+<form name="frm">
+<table width=300 height=200 border=1 cellspacing=0 cellpadding=10>
+<tr>
+	<td colspan=2 align=center ><b>Prove Identity</b></td>
+</tr>
+<tr>
+	<td>Num 1</td>
+	<td><input type=text name=t1 id="t1"></td>
+</tr>
+<tr>
+	<td>Num 2</td>
+	<td><input type=text name=t2 id="t2"></td>
+</tr>
+<tr>
+	<td colspan=2 align=center>
+		<input type=button name=b1 value="Add" onclick="sum()">
+		<input type=button name=b2 value="subtract" onclick="diff()">
+	</td>
+</tr>
+<tr>
+	<td>Result</td>
+	<td><input type=text name=t3 id="t3"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
